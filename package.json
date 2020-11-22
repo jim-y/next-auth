@@ -1,0 +1,36 @@
+{
+    "name": "next-auth",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "axios": "^0.21.0",
+        "styled-components": "^5.2.1"
+    },
+    "devDependencies": {
+        "husky": "^4.3.0",
+        "lint-staged": "^10.5.1",
+        "prettier": "^2.1.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jim-y/next-auth.git"
+    },
+    "author": "Attila Kling",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jim-y/next-auth/issues"
+    },
+    "homepage": "https://github.com/jim-y/next-auth#readme",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,tsx,css,md}": "prettier --write"
+    }
+}
